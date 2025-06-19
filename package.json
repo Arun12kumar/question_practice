@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-   "homepage": "https://github.com/Arun12kumar/question_practice.git",
+   "homepage": "https://arun12kumar.github.io/question_practice/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
