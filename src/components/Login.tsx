@@ -20,7 +20,7 @@ const Login: React.FC = () => {
     try {
       const success = await login(email, password);
       if (success) {
-        navigate('/');
+        navigate('/question_practice/');
       } else {
         setError('Invalid email or password');
       }

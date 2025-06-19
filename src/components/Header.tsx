@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   const handleLogout = () => {
     logout();
-    navigate('/');
+    navigate('/question_practice/');
   };
 
   const isActive = (path: string) => location.pathname === path;
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
     <header className="bg-white shadow-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+          <Link to="/question_practice/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="p-2 bg-blue-600 rounded-lg">
               <Train className="h-6 w-6 text-white" />
             </div>
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
 
           <nav className="hidden md:flex space-x-8">
             <Link
-              to="/"
+              to="/question_practice/"
               className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                 isActive('/') 
                   ? 'text-blue-600 bg-blue-50' 

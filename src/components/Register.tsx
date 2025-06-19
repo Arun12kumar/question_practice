@@ -34,7 +34,7 @@ const Register: React.FC = () => {
     try {
       const success = await register(name, email, password);
       if (success) {
-        navigate('/');
+        navigate('/question_practice/');
       } else {
         setError('User with this email already exists');
       }
